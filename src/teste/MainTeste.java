@@ -16,10 +16,10 @@ public class MainTeste {
 		while (valor >= 0) {
 			lista.insere(valor);
 			lista.exibir();
+			
 			System.out.println("Informe dado positivo para inserir ou negativo para encerrar ");
 			valor = input.nextInt();
 		}
-
 		input.close();
 	}
 
