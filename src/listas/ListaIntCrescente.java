@@ -54,4 +54,23 @@ public class ListaIntCrescente {
 		}
 	}
 	
+	public void remover(int valor) {
+		//Ver se é o primeiro da fila
+		if(lista.dado == valor) {
+			lista = lista.prox;
+		}
+		else {
+			NO aux = lista;
+			boolean achou = false;
+			while(aux.prox != null && !achou) {
+				if(aux.prox.dado != valor) 
+					aux = aux.prox;
+				else {
+					achou = true;
+					aux.prox = aux.prox.prox;
+				}
+			}
+		}
+	}
+	
 }
