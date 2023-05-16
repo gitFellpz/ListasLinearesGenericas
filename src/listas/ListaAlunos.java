@@ -2,7 +2,7 @@ package listas;
 
 public class ListaAlunos {
 	private class NO{
-		int dado;
+		Aluno dado;
 		NO prox;
 	}
 	
