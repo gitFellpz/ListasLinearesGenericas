@@ -1,5 +1,7 @@
 package listas;
 
+import listas.ListaAlunos.NO;
+
 public class ListaIntCrescente {
 
 	private class NO{
@@ -72,6 +74,26 @@ public class ListaIntCrescente {
 			}
 		}
 		return achou;
+	}
+	
+	public int contaNos() {
+		int cont = 0;
+		//Percorre cada NO da lista
+		NO aux = lista;
+		while(aux != null) {
+			cont++;
+			aux = aux.prox;
+		}
+		return cont;
+	}
+	
+	public void apresenta() {
+		NO aux = lista;
+		System.out.println("---LISTA---");
+		while(aux != null) {
+			System.out.println("\t "+aux.dado);
+			aux = aux.prox;
+		}
 	}
 	
 	public void apresentaMaiores(int limite) {
