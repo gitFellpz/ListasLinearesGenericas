@@ -1,6 +1,5 @@
 package listas;
 
-import listas.ListaAlunos.NO;
 
 public class ListaIntCrescente {
 
