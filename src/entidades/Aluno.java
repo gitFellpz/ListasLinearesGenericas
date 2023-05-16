@@ -24,5 +24,8 @@ public class Aluno {
 		this.media = media;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Aluno [rm=" + rm + ", media=" + media + "]";
+	}
 }

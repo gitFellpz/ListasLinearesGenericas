@@ -54,14 +54,14 @@ public class ListaIntCrescente {
 		}
 	}
 	
-	public void remover(int valor) {
+	public boolean remover(int valor) {
+		boolean achou = false;
 		//Ver se é o primeiro da fila
 		if(lista.dado == valor) {
 			lista = lista.prox;
 		}
 		else {
 			NO aux = lista;
-			boolean achou = false;
 			while(aux.prox != null && !achou) {
 				if(aux.prox.dado != valor) 
 					aux = aux.prox;
@@ -71,6 +71,7 @@ public class ListaIntCrescente {
 				}
 			}
 		}
+		return achou;
 	}
 	
 	public void apresentaMaiores(int limite) {
