@@ -73,4 +73,13 @@ public class ListaIntCrescente {
 		}
 	}
 	
+	public void apresentaMaiores(int limite) {
+		NO aux = lista;
+		System.out.println("Valores maiores do que "+limite+" : ");
+		while(aux != null) {
+			if(aux.dado > limite)
+				System.out.println("\t"+aux.dado);
+			aux = aux.prox;
+		}
+	}
 }
